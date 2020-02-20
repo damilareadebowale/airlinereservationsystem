@@ -23,7 +23,7 @@ CREATE TABLE Airfare(
     FareInNaira decimal,
     RouteId INT,
     AirfareRouteId INT,
-    PRIMARY KEY (AirfareId, FareInNaira),
+    PRIMARY KEY (AirfareId),
     FOREIGN KEY(AirfareRouteId) REFERENCES Routepath (RouteId)
 );
 
